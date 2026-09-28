@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSA Enterprise LLC | GCC Transport & Logistics</title>
+<meta name="description" content="MSA Enterprise LLC - Heavy Transport, Import, Export and GCC Logistics from Muscat and Sohar, Oman.">
+<style>
+:root{--navy:#071a33;--navy2:#0d2b4d;--gold:#d7a83f;--white:#fff;--light:#f4f7fa;--text:#172334;--muted:#617083}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+html{scroll-behavior:smooth}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,26,51,.97);padding:16px 6%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 18px #0002}
+.logo{font-weight:800;color:white;font-size:22px;letter-spacing:.5px}
+.logo span{color:var(--gold)}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
+.lang{border:1px solid #ffffff55;background:transparent;color:white;padding:8px 10px;border-radius:6px}
+.hero{min-height:650px;background:linear-gradient(90deg,#06172df2,#06172d99,#06172d44),url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;padding:90px 6%;color:white}
+.hero-inner{max-width:760px}
+.badge{display:inline-block;border:1px solid #d7a83f88;color:#f2cf78;padding:7px 12px;border-radius:20px;margin-bottom:20px;font-size:13px}
+h1{font-size:clamp(40px,6vw,72px);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:20px;max-width:650px;color:#eef4fa;margin-bottom:30px}
+.btn{display:inline-block;text-decoration:none;padding:13px 20px;border-radius:7px;font-weight:700;margin:5px}
+.btn-gold{background:var(--gold);color:#071a33}.btn-outline{border:1px solid white;color:white}
+section{padding:75px 6%}
+.container{max-width:1180px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:36px;color:var(--navy);margin-bottom:10px}
+.section-title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:white;padding:28px;border-radius:12px;box-shadow:0 8px 25px #10233a10;border:1px solid #e5eaf0}
+.icon{font-size:34px;margin-bottom:12px}.card h3{color:var(--navy);margin-bottom:8px}.card p{color:var(--muted)}
+.about{background:white}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-box{background:var(--navy);color:white;padding:40px;border-radius:16px}.about-box strong{color:#f2cf78}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}.stat{background:#ffffff12;padding:18px;border-radius:9px;text-align:center}.stat b{font-size:23px;color:#f2cf78;display:block}
+.routes{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white}.routes h2{color:white}.routebox{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap;background:#ffffff0c;border:1px solid #ffffff22;padding:25px;border-radius:14px}
+.route{padding:12px 18px;border:1px solid #ffffff30;border-radius:9px;font-weight:700}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{background:white;padding:25px;border-radius:12px;border-top:4px solid var(--gold);box-shadow:0 8px 25px #10233a0d}.num{font-size:30px;font-weight:800;color:var(--gold)}
+.quote{background:#edf2f6}.form{max-width:760px;margin:auto;background:white;padding:30px;border-radius:14px;box-shadow:0 8px 25px #10233a10}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}input,textarea{width:100%;padding:13px;border:1px solid #d6dee8;border-radius:7px;font:inherit}textarea{min-height:120px}.full{grid-column:1/-1}.submit{border:0;cursor:pointer;width:100%;padding:14px;background:var(--gold);color:var(--navy);font-weight:800;border-radius:7px;font-size:16px}
+.contact{background:white}.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.contact-card{text-align:center;padding:24px;background:var(--light);border-radius:10px}.contact-card b{display:block;color:var(--navy);margin-bottom:5px}
+footer{background:#041225;color:#b9c6d5;text-align:center;padding:35px 6%}footer strong{color:white}footer small{display:block;margin-top:8px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;text-decoration:none;padding:14px 18px;border-radius:50px;font-weight:800;box-shadow:0 5px 20px #0004;z-index:20}
+@media(max-width:800px){nav{flex-wrap:wrap;gap:10px}nav .links{display:none}.hero{min-height:590px}.grid,.about-grid,.contact-grid{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.stats{grid-template-columns:1fr 1fr}h1{font-size:44px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">MSA <span>ENTERPRISE LLC</span></div>
+  <div class="links">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#routes">GCC Routes</a><a href="#quote">Quote</a><a href="#contact">Contact</a>
+  </div>
+  <select class="lang" onchange="setLang(this.value)" aria-label="Language">
+    <option value="en">English</option><option value="ar">العربية</option><option value="hi">हिन्दी</option>
+  </select>
+</nav>
+
+<header class="hero" id="home">
+<div class="hero-inner">
+<span class="badge" id="badge">MUSCAT • SOHAR • GCC</span>
+<h1 id="heroTitle">Moving Your Cargo. Connecting Your Business.</h1>
+<p id="heroText">Professional heavy transport, freight, import & export and GCC cross-border logistics solutions from Oman.</p>
+<a class="btn btn-gold" href="#quote" id="quoteBtn">Request a Quote</a>
+<a class="btn btn-outline" href="https://wa.me/96890672565" target="_blank">WhatsApp Us</a>
+</div>
+</header>
+
+<section id="services">
+<div class="container">
+<div class="section-title"><h2 id="servicesTitle">Our Services</h2><p id="servicesSub">Reliable solutions for cargo movement across Oman and the GCC.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🚛</div><h3 id="s1t">Heavy Transport</h3><p id="s1p">Reliable transportation solutions for heavy and demanding cargo.</p></div>
+<div class="card"><div class="icon">🚚</div><h3 id="s2t">Flatbed Transportation</h3><p id="s2p">Professional flatbed transport for industrial and commercial freight.</p></div>
+<div class="card"><div class="icon">🌍</div><h3 id="s3t">GCC Cross-Border</h3><p id="s3p">Road transportation connecting Oman with UAE and GCC destinations.</p></div>
+<div class="card"><div class="icon">📦</div><h3 id="s4t">Import & Export</h3><p id="s4p">Logistics support for regional and international cargo movements.</p></div>
+<div class="card"><div class="icon">🛃</div><h3 id="s5t">Customs & Border Support</h3><p id="s5p">Documentation and logistics coordination for smoother border procedures.</p></div>
+<div class="card"><div class="icon">⚓</div><h3 id="s6t">Freight & Cargo Logistics</h3><p id="s6p">Coordinated transportation from ports, industrial and commercial locations.</p></div>
+</div></div>
+</section>
+
+<section class="about" id="about">
+<div class="container about-grid">
+<div><div class="section-title" style="text-align:left;margin-bottom:20px"><h2 id="aboutTitle">About MSA Enterprise LLC</h2></div>
+<p id="aboutText">MSA Enterprise LLC (AKHIYA ENTERPRISES LLC) is an Oman-based transportation and logistics company specializing in heavy transport, freight movement, import & export, and GCC cross-border logistics. Operating from Muscat and Sohar, we help businesses move cargo safely and efficiently across Oman and GCC markets.</p>
+<p style="margin-top:16px"><strong id="value">We don't simply move cargo — we help businesses keep their supply chains moving.</strong></p></div>
+<div class="about-box"><h2 id="commitTitle">Our Commitment</h2><p id="commitText" style="margin-top:12px">Safety, reliability, efficiency and professional service — with clear communication and responsible cargo handling.</p>
+<div class="stats"><div class="stat"><b>Oman</b><span>Operations</span></div><div class="stat"><b>GCC</b><span>Routes</span></div><div class="stat"><b>24/7</b><span>Enquiry</span></div></div></div>
+</div></section>
+
+<section class="routes" id="routes">
+<div class="container">
+<div class="section-title"><h2 id="routesTitle">Our GCC Operations</h2><p id="routesSub">Connecting key commercial and industrial routes.</p></div>
+<div class="routebox"><div class="route">📍 Muscat</div><div>→</div><div class="route">⚓ Sohar</div><div>→</div><div class="route">🇦🇪 UAE</div><div>→</div><div class="route">🌍 GCC</div></div>
+</div></section>
+
+<section>
+<div class="container">
+<div class="section-title"><h2 id="processTitle">How It Works</h2><p id="processSub">Simple, professional logistics coordination.</p></div>
+<div class="process">
+<div class="step"><div class="num">01</div><h3>Request</h3><p>Share your cargo and route requirements.</p></div>
+<div class="step"><div class="num">02</div><h3>Plan</h3><p>We coordinate the appropriate transport solution.</p></div>
+<div class="step"><div class="num">03</div><h3>Transport</h3><p>Your cargo moves according to the agreed plan.</p></div>
+<div class="step"><div class="num">04</div><h3>Delivery</h3><p>Professional coordination through delivery.</p></div>
+</div></div></section>
+
+<section class="quote" id="quote">
+<div class="section-title"><h2 id="quoteTitle">Request a Quote</h2><p id="quoteSub">Tell us about your cargo and route.</p></div>
+<div class="form">
+<form onsubmit="sendQuote(event)">
+<div class="form-grid">
+<input id="name" placeholder="Name" required><input id="company" placeholder="Company">
+<input id="phone" placeholder="Phone / WhatsApp" required><input id="cargo" placeholder="Cargo Type">
+<input id="pickup" placeholder="Pickup Location"><input id="delivery" placeholder="Delivery Location">
+<textarea class="full" id="message" placeholder="Message / Requirements"></textarea>
+<div class="full"><button class="submit" type="submit">SEND REQUEST VIA WHATSAPP</button></div>
+</div></form></div></section>
+
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact MSA Enterprise LLC</h2><p>AKHIYA ENTERPRISES LLC</p></div>
+<div class="contact-grid">
+<div class="contact-card">📞<b>Phone / WhatsApp</b>+968 90672565</div>
+<div class="contact-card">📧<b>Email</b>Muhmmadshahzad686@gmail.com</div>
+<div class="contact-card">📍<b>Operations</b>Muscat & Sohar, Oman</div>
+<div class="contact-card">🔢<b>Custom Code</b>C00196008</div>
+</div></div></section>
+
+<footer><strong>MSA ENTERPRISE LLC</strong><br>Reliable Transport. Smooth Borders. Connected GCC.<small>© 2026 MSA Enterprise LLC. All Rights Reserved.</small></footer>
+<a class="whatsapp" href="https://wa.me/96890672565" target="_blank">💬 WhatsApp</a>
+
+<script>
+const T={
+en:{badge:"MUSCAT • SOHAR • GCC",heroTitle:"Moving Your Cargo. Connecting Your Business.",heroText:"Professional heavy transport, freight, import & export and GCC cross-border logistics solutions from Oman.",servicesTitle:"Our Services",servicesSub:"Reliable solutions for cargo movement across Oman and the GCC.",aboutTitle:"About MSA Enterprise LLC",value:"We don't simply move cargo — we help businesses keep their supply chains moving.",commitTitle:"Our Commitment",routesTitle:"Our GCC Operations",routesSub:"Connecting key commercial and industrial routes.",processTitle:"How It Works",processSub:"Simple, professional logistics coordination.",quoteTitle:"Request a Quote",quoteSub:"Tell us about your cargo and route."},
+ar:{badge:"مسقط • صحار • دول الخليج",heroTitle:"نقل شحناتكم. ربط أعمالكم.",heroText:"حلول احترافية للنقل الثقيل والشحن والاستيراد والتصدير والنقل البري عبر دول الخليج من سلطنة عُمان.",servicesTitle:"خدماتنا",servicesSub:"حلول موثوقة لنقل البضائع داخل عُمان ودول الخليج.",aboutTitle:"نبذة عن MSA Enterprise LLC",value:"نحن لا ننقل البضائع فقط، بل نساعد الشركات على الحفاظ على استمرارية سلاسل الإمداد.",commitTitle:"التزامنا",routesTitle:"عملياتنا في دول الخليج",routesSub:"ربط أهم المسارات التجارية والصناعية.",processTitle:"كيف نعمل",processSub:"تنسيق لوجستي بسيط واحترافي.",quoteTitle:"اطلب عرض سعر",quoteSub:"أرسل لنا تفاصيل الشحنة والمسار."},
+hi:{badge:"मस्कट • सोहर • GCC",heroTitle:"आपका कार्गो, हमारी जिम्मेदारी।",heroText:"ओमान से हेवी ट्रांसपोर्ट, फ्रेट, आयात-निर्यात और GCC क्रॉस-बॉर्डर लॉजिस्टिक्स समाधान।",servicesTitle:"हमारी सेवाएँ",servicesSub:"ओमान और GCC में कार्गो परिवहन के लिए भरोसेमंद समाधान।",aboutTitle:"MSA Enterprise LLC के बारे में",value:"हम केवल कार्गो नहीं ले जाते — हम आपके बिज़नेस की सप्लाई चेन को आगे बढ़ाने में मदद करते हैं।",commitTitle:"हमारी प्रतिबद्धता",routesTitle:"हमारे GCC ऑपरेशंस",routesSub:"प्रमुख वाणिज्यिक और औद्योगिक मार्गों को जोड़ना।",processTitle:"हम कैसे काम करते हैं",processSub:"सरल और प्रोफेशनल लॉजिस्टिक्स कोऑर्डिनेशन।",quoteTitle:"कोटेशन प्राप्त करें",quoteSub:"अपने कार्गो और रूट की जानकारी भेजें।"}
+};
+function setLang(l){
+const t=T[l]; Object.keys(t).forEach(k=>{const e=document.getElementById(k);if(e)e.textContent=t[k]});
+document.documentElement.lang=l; document.body.dir=l==="ar"?"rtl":"ltr";
+}
+function sendQuote(e){
+e.preventDefault();
+const msg=`MSA Enterprise LLC Quote Request%0AName: ${name.value}%0ACompany: ${company.value}%0APhone: ${phone.value}%0ACargo: ${cargo.value}%0APickup: ${pickup.value}%0ADelivery: ${delivery.value}%0AMessage: ${message.value}`;
+window.open("https://wa.me/96890672565?text="+msg,"_blank");
+}
+</script>
+</body>
+</html>
